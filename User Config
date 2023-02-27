@@ -1,0 +1,181 @@
+#/////// Welcome to Config GIT//////
+
+
+#       //Basic Config//
+
+# Configuracion Especifica de Usuario
+
+   > git config --global user.name "nombre"
+    > git config --global user.email "email"
+
+# Habilitar la Util Colorizacion 
+
+  > git config --global color.ui auto
+   
+# Ver La configuracion    
+
+  > git config --list
+  
+# Puedes Establecer facilmente un alias
+
+  > git config --global alias.ci 'commit'
+  
+# Con este comando haremos que git detecte automaticamente lo que queremos escribir.
+
+  > git config --global help.autocorrect 1
+  
+#     //Init Repository//  
+  
+# Iniciar nuevo repositorio 
+ 
+  > git init
+  
+# Clonar un repositorio remoto
+
+  > git clone <https://repositorioz>
+  
+# Agregar archivos a la area de preparacion 
+
+  > git add <nombre-del-archivo>
+  > git add .     # Agrega todos los archivos
+  
+# Hacer Commit de los cambios con un mensaje que explique los cambios 
+
+  > git commit -m "Mensaje del Commit"
+  
+# Subir los archivos a un repositorio remoto 
+
+  > git push origin <nombre-de-la-rama>
+  
+#         //Branch//
+
+# Crear una nueva rama en local
+
+  > git branch <nombre-de-la-rama>
+  
+# Crear nueva rama y pocisionarse en ella
+
+  > git checkout -b <nombre-de-la-rama>
+  
+# Cambiar de rama 
+
+  > git checkout <nombre-de-la-rama>
+  
+# Lista de Ramas 
+
+  > git branch
+  
+# Eliminiar una rama existente
+
+  > git branch -D <nombre-de-la-rama>
+  
+# Fusionar una rama dentro de otra rama
+
+  > git merge
+  
+#         //Rebase//
+
+#  Git rebase se utiliza para aplicar ciertos cambios de una rama en otra. Para hacer un rebase a una rama en especifico ejecuta el sigiente comando.
+
+  > git rebase <nombre-de-la-rama>
+  
+# Cuando resolvemos los conflictos  --continue continua la secuencia del rebase donde se pauso.
+
+  > git rebase --continue
+  
+# Omite el conflicto y sigue su camino
+
+  > git rebase --skip
+  
+# Devuelve todo al principio del rebase
+
+  > git rebase --abort
+  
+#   //Git Remote//
+
+# Permite ver todos los repositorios remoto
+
+  > git remote -v
+  
+# Crear un repositorio remoto y lo enlaza con tu repositorio local
+
+  > git remote add <nombre/origin>  <url>
+  
+# Elimina el enlace al repositorio remoto
+
+  > git remote rm <nombre/origin>
+  
+# Permite cambiar La URL del repositiorio Remoto
+
+  > git remote set-url origin <url>
+  
+# Muestra las ramas remotas
+
+  > git remote show origin
+  
+# Limpia todas las ramas eliminadas
+
+  > git remote prune origin 
+  
+#  //Tags//
+
+# Crea nuevos Tags
+
+  > git tag v0.0.1 -m "primera version"
+  
+# Muestra una lista de todos los tags
+
+  > git tag
+  
+# Te permite ver como estaba el repositorio en cada estado.
+
+  > git show v0.0.1
+  
+# Enviar repositorio en GitHub
+
+  > git push --tags
+  
+#        // Otros Comandos //
+
+# Nos indica el estado del repositiorio
+
+  > git status -s
+  
+# Muestra un listado de commits.
+
+  > git log --graph --oneline --decorate
+  
+# Trae los cambios del repositiorio remoto y hace merge de ellos
+
+  > git pull origin <nombre-de-la-rama>
+  
+# Verifica cambios en el repositorio remoto con el local
+
+  > git fetch
+  
+# Borra un archivo
+
+  > git rm <nombre-del-archivo>
+  
+# Almacena temporalmente el trabajo sin comentar 
+
+  > git stash
+  
+# Para recuperar los ultimos cambios desde el stash a tu staging
+
+  > git stash pop
+  
+# Deshacer los git add.
+
+  > git reset .
+ 
+# Modificar los Git commit
+
+  > git commit --amend
+  
+# Muestra las diferencias de archivos que no se han enviado aun al area de espera
+
+  > git diff
+  
+# /////////////// Espero les sirva estos pequeños comando de git /////////////#########
+
